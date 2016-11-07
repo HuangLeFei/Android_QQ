@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDF1" >
+
+    <View
+        android:id="@+id/qq_tou"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp" />
+
+    <com.ht.qq.imageview.CircleImageView
+        android:id="@+id/qq_tupian"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/qq_tou"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gco" />
+
+    <TextView
+        android:id="@+id/qq_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/qq_tupian" />
+
+    <TextView
+        android:id="@+id/qq_beizh"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_text1"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/login_account_zh"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_text1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="65dp"
+        android:background="@color/white"
+        android:hint="请输入账号"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/qq_xx1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/qq_beizh"
+        android:layout_below="@id/qq_text1"
+        android:layout_margin="15dp"
+        android:src="@drawable/common_input_box_clear" />
+
+    <ImageView
+        android:id="@+id/login_xialakuang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qq_text1"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/qq_xx1"
+        android:onClick="accountsel"
+        android:src="@drawable/mua" />
+
+    <TextView
+        android:id="@+id/qq_xian"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/login_account_zh" />
+
+    <TextView
+        android:id="@+id/qq_beimm"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_xian"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/login_account_mm"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_xian"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/white"
+        android:hint="请输入密码"
+        android:password="true"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/qq_xx2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/qq_beimm"
+        android:layout_below="@id/qq_xian"
+        android:layout_margin="15dp"
+        android:src="@drawable/common_input_box_clear" />
+
+    <TextView
+        android:id="@+id/qq_text2"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/login_account_mm" />
+
+    <Button
+        android:id="@+id/login_image_dl"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_text2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_login"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/qq_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="无法登录？"
+        android:layout_alignParentBottom="true"
+        android:textColor="#1FBAF3"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/qq_text5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ECEDF1"
+        android:gravity="right|center_vertical"
+        android:onClick="zhuce"
+        android:text="新用户注册"
+        android:textColor="#1FBAF3"
+        android:textSize="17sp" />
+
+</RelativeLayout>

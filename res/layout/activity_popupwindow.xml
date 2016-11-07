@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/conversation_options_bg">
+
+        <Button
+            android:id="@+id/people_chat"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:text="发起多人聊天"/>
+        
+         <ImageView
+            android:id="@+id/people_chat_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/conversation_options_multichat" />
+
+        <Button
+            android:id="@+id/add_friend"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/people_chat"
+            android:textSize="15dp"
+            android:text="加好友" />
+        
+         <ImageView
+            android:id="@+id/add_friend_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/people_chat"
+            android:layout_margin="10dp"
+            android:src="@drawable/conversation_options_addmember" />
+
+        <Button
+            android:id="@+id/scan_one_scan"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/add_friend"
+            android:textSize="15dp"
+            android:text="扫一扫" />
+
+         <ImageView
+            android:id="@+id/scan_one_scan_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/add_friend"
+            android:layout_margin="10dp"
+            android:src="@drawable/conversation_options_qr" />
+        
+        <Button
+            android:id="@+id/face_to_face"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/scan_one_scan"
+            android:textSize="15dp"
+            android:text="面对面快传" />
+        
+        <ImageView
+            android:id="@+id/face_to_face_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/scan_one_scan"
+            android:layout_margin="10dp"
+            android:src="@drawable/conversation_facetoface_qr" />
+
+        <Button
+            android:id="@+id/pay_ment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/face_to_face"
+            android:background="@android:color/transparent"
+            android:textSize="15dp"
+            android:text="付款" />
+        <ImageView
+            android:id="@+id/pay_ment_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/face_to_face"
+            android:layout_margin="10dp"
+            android:src="@drawable/conversation_options_charge_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

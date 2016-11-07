@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9FB"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#12B8F6" />
+
+    <TextView
+        android:id="@+id/qq_fanhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_fh"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@+id/img_fh"
+        android:onClick="fanhui"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/qq_fanhui"
+        android:layout_alignBottom="@+id/qq_fanhui"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_fh"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="fanhui"
+        android:scaleType="centerInside"
+        android:src="@drawable/hps" />
+
+    <TextView
+        android:id="@+id/qq_hin0"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/view1" />
+
+    <Button
+        android:id="@+id/qq_zhanghaoguanli_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:onClick="zhanghaoguanli"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin0"/>
+
+    <TextView
+        android:id="@+id/qq_zhanghaoguanli"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin0"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    账号管理"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/qq_zhanghaoguanli"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/qq_zhanghaoguanli"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    手机号码"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView9"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView9"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin2"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    QQ达人"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView8"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin3"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/textView8" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin3"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    消息通知"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView7"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView7"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin4"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    聊天记录"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView6"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin5"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/textView6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin5"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    联系人、隐私"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView5"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView5"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin6"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    设备锁、账号安全"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView4"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView4"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin7"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    安全检测"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView3"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin8"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView3"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin8"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    辅助功能"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView2"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin9"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/qq_hin9"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    关于QQ与帮助"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_qj10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView1"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/qq_hin10"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/textView1" />
+
+</RelativeLayout>

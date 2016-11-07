@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/list_dongtai_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="#12B8F6" />
+
+        <TextView
+            android:id="@+id/qq_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_fh"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@+id/img_fh"
+            android:onClick="fanhui"
+            android:text="动态"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/qq_fanhui"
+            android:layout_alignBottom="@+id/qq_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:text="好友动态"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_fh"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="fanhui"
+            android:scaleType="centerInside"
+            android:src="@drawable/hps" />
+
+        <ImageView
+            android:id="@+id/list_imgjia"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:onClick="showpopupwindowdynamic"
+            android:src="@drawable/skin_qzone_main_more" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/list_dongtai_layout"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:id="@+id/list_dongtai_beijinimg"
+                android:layout_width="fill_parent"
+                android:layout_height="210dp"
+				android:src="@drawable/qzbeijing"/>
+
+            <com.ht.qq.imageview.CircleImageView
+                android:id="@+id/list_dongtai_datouxiang"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/gco" />
+
+            <ListView
+                android:id="@+id/list_dongtai_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/list_dongtai_beijinimg" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/list_dongtai_layoutxsgy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_above="@id/list_dongtai_listview"
+                android:background="#225268"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/list_dongtai_xiangche"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="相册"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/fyu" />
+
+                <Button
+                    android:id="@+id/list_dongtai_shuoshuo"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="说说"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/fyu" />
+
+                <Button
+                    android:id="@+id/list_dongtai_gexinghua"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="个性化"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/fyu" />
+
+                <Button
+                    android:id="@+id/list_dongtai_yuwoxiangguan"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="与我相关"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

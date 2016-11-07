@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9FB"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1_friendsel"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#12B8F6" />
+
+    <TextView
+        android:id="@+id/qq_fanhui_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_fh"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@id/img_fh"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/qq_fanhui"
+        android:layout_alignBottom="@id/qq_fanhui"
+        android:layout_alignTop="@id/qq_fanhui_friend"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_fh"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="addfanhui"
+        android:scaleType="centerInside"
+        android:src="@drawable/hps" />
+
+    <LinearLayout
+        android:id="@+id/list_friend_zhaolin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1_friendsel"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="找人"
+            android:textColor="#A7A7A7"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="找群"
+            android:textColor="#A7A7A7"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="找公众号"
+            android:textColor="#A7A7A7"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_selfriend_text3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/list_friend_zhaolin"
+        android:background="#D6D6D8" />
+
+    <TextView
+        android:id="@+id/list_selfriend_text1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/list_selfriend_text3"
+        android:background="#F9F9FB" />
+
+    <Button
+        android:id="@+id/list_selfriend_selbtn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/list_selfriend_text1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button_login"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/list_selfriend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/list_selfriend_text1"
+        android:layout_toLeftOf="@id/list_selfriend_selbtn"
+        android:background="@color/white"
+        android:gravity="center|center_vertical"
+        android:hint="QQ号/手机号/邮箱/群/公众号" />
+
+    <TextView
+        android:id="@+id/list_selfriend_text2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/list_selfriend"
+        android:background="#F9F9FB" />
+
+    <TextView
+        android:id="@+id/list_selfriend_text4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/list_selfriend_text2"
+        android:background="#E5E5E7" />
+
+    <TextView
+        android:id="@+id/list_selffriend_mianduimian"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/list_selfriend_text4"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/list_self_friend_mianduimianbtn_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/list_selfriend_text4"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/fni" />
+
+    <TextView
+        android:id="@+id/list_self_friend_mianduimianbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/list_self_friend_mianduimianbtn_img"
+        android:layout_below="@id/list_selfriend_text4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="面对面添加"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/list_selfriend_text5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/list_selffriend_mianduimian"
+        android:background="#DBDBDB" />
+
+</RelativeLayout>

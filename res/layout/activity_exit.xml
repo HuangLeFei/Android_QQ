@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F9F9" >
+
+    <View
+        android:id="@+id/view1_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#12B8F6" />
+
+    <ImageView
+        android:id="@+id/img_fh_exit"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="fanhuiexit"
+        android:scaleType="centerInside"
+        android:src="@drawable/hps" />
+
+    <TextView
+        android:id="@+id/qq_fanhui_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_fh_exit"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@id/img_fh_exit"
+        android:onClick="fanhuiexit"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/qq_fanhui_exit"
+        android:layout_alignBottom="@id/qq_fanhui_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="账号管理"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/qq_hin0"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/view1_exit" />
+    
+    <Button 
+        android:id="@+id/list_exit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin0"
+        android:textSize="20sp"
+        android:background="#FFFfff"
+        android:text="退出账号"/>
+</RelativeLayout>

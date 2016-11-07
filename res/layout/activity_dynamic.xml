@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/list_dongtai_view1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F0F0F0" />
+
+    <com.ht.qq.imageview.CircleImageView
+        android:id="@+id/list_dongtai_touxiang"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/list_dongtai_view1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gco" />
+
+    <Button
+        android:id="@+id/list_dongtai_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/list_dongtai_touxiang"
+        android:layout_toRightOf="@id/list_dongtai_touxiang"
+        android:background="@android:color/transparent"
+        android:text="小明"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/list_dongtai_daytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/list_dongtai_touxiang"
+        android:layout_toRightOf="@id/list_dongtai_touxiang"
+        android:text="今天10:43" />
+
+    <ImageView
+        android:id="@+id/list_dongtai_daren"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/list_dongtai_name"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_dongtai_name"
+        android:src="@drawable/oop" />
+
+    <ImageView
+        android:id="@+id/list_dongtai_popupb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_dongtai_name"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/mua" />
+
+    <TextView
+        android:id="@+id/list_dongtai_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_dongtai_touxiang"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="今天天气好好哦!   我们一起去玩耍吧. . .  呵呵,666666"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/list_dongtai_liylancount"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/list_dongtai_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="浏览0次" />
+
+    <ImageView
+        android:id="@+id/list_dongtai_fenxiang"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_dongtai_liylancount"
+        android:layout_below="@id/list_dongtai_content"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/opw" />
+
+    <ImageView
+        android:id="@+id/list_dongtai_pinglun"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@id/list_dongtai_liylancount"
+        android:layout_below="@id/list_dongtai_content"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@id/list_dongtai_fenxiang"
+        android:src="@drawable/opv" />
+
+    <ImageView
+        android:id="@+id/list_dongtai_dianzan"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@id/list_dongtai_liylancount"
+        android:layout_below="@id/list_dongtai_content"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@id/list_dongtai_pinglun"
+        android:onClick="dynamicdianzan"
+        android:src="@drawable/opx" />
+
+    <TextView
+        android:id="@+id/list_dongtai_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/list_dongtai_liylancount"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#EDEDED" />
+
+    <ImageView
+        android:id="@+id/list_dongtai_zongzan"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/list_dongtai_view2"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/otk" />
+
+    <Button
+        android:id="@+id/dongtai_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_dongtai_view2"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_dongtai_zongzan"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="小钰"
+        android:textColor="#536A8A" />
+
+    <EditText
+        android:id="@+id/list_dongtai_pinglunkuang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_dongtai_zongzan"
+        android:layout_margin="10dp"
+        android:hint="评论" />
+
+    <ImageView
+        android:id="@+id/list_dongtai_hongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_dongtai_pinglunkuang"
+        android:layout_below="@id/list_dongtai_zongzan"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/skin_aio_panel_hongbao_nor" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F3F3" >
+
+    <TextView
+        android:id="@+id/list_sendmsg_time_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="00:00" />
+
+    <com.ht.qq.imageview.CircleImageView
+        android:id="@+id/chat_left_qqicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/list_sendmsg_time_left"
+        android:src="@drawable/lpd" />
+
+    <TextView
+        android:id="@+id/chat_left_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/chat_left_qqicon"
+        android:layout_toRightOf="@id/chat_left_qqicon"
+        android:background="@drawable/left_white"
+        android:text="Hello,能和你交个朋友？？？？？？？" />
+
+</RelativeLayout>

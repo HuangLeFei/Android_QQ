@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white" >
+
+        <com.ht.qq.imageview.CircleImageView
+            android:id="@+id/contact_friendheadico"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/gco" />
+
+        <TextView
+            android:id="@+id/contact_friendmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contact_friendheadico"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/contact_friendheadico"
+            android:text="[4G在线]今天出去吃饭吧！"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/contact_friendname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contact_friendmessage"
+            android:layout_alignLeft="@+id/contact_friendmessage"
+            android:text="落英坡"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

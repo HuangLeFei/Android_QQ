@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nww2"
+    android:orientation="vertical" >
+
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        android:id="@+id/slidingmenulayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/list_siding_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.ht.qq.imageview.CircleImageView
+                android:id="@+id/list_siding_touxiang"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/hcw" />
+
+            <TextView
+                android:id="@+id/list_siding_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/list_siding_touxiang"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/list_siding_touxiang"
+                android:text="冬微热"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/list_dising_lev_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/list_siding_touxiang"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/list_siding_touxiang"
+                android:src="@drawable/hdr" />
+
+            <ImageView
+                android:id="@+id/list_dising_lev_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/list_siding_touxiang"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/list_dising_lev_1"
+                android:src="@drawable/hds" />
+
+            <ImageView
+                android:id="@+id/list_siding_erweima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/list_siding_touxiang"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/list_siding_name"
+                android:src="@drawable/fbb" />
+
+            <ImageView
+                android:id="@+id/list_siding_qianying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/list_siding_touxiang"
+                android:layout_below="@id/list_siding_touxiang"
+                android:src="@drawable/qq_setting_me_richstatus_icon_none" />
+
+            <Button
+                android:id="@+id/list_siding_qianming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_siding_touxiang"
+                android:layout_toRightOf="@id/list_siding_qianying"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:text="个性签名。。。" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_siding_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_siding_rel"
+            android:layout_marginTop="80dp" >
+
+            <ImageView
+                android:id="@+id/list_siding_huiyuan_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/qq_setting_svip" />
+
+            <Button
+                android:id="@+id/list_siding_huiyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:text="            了解会员特权"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/list_siding_money_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/list_siding_huiyuan"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/qq_setting_qianbao" />
+
+            <Button
+                android:id="@+id/list_siding_qianbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_siding_huiyuan"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:color/transparent"
+                android:text="            QQ钱包"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/list_siding_zhuangban_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/list_siding_qianbao"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/qq_setting_zhuangban" />
+
+            <Button
+                android:id="@+id/list_siding_zhuangban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_siding_qianbao"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:color/transparent"
+                android:text="            个性装扮"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/list_siding_shoucang_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/list_siding_zhuangban"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/qq_setting_shoucang" />
+
+            <Button
+                android:id="@+id/list_siding_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_siding_zhuangban"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:color/transparent"
+                android:text="            我的收藏"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/list_siding_xiangce_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/list_siding_shoucang"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/qq_setting_xiangce" />
+
+            <Button
+                android:id="@+id/list_siding_xiangce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_siding_shoucang"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:color/transparent"
+                android:text="            我的相册"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/list_siding_wenjian_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/list_siding_xiangce"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/qq_setting_wenjian" />
+
+            <Button
+                android:id="@+id/list_siding_wenjian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_siding_xiangce"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:color/transparent"
+                android:text="            我的文件"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/list_siding_mingpian_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/list_siding_wenjian"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/qq_setting_businesscard" />
+
+            <Button
+                android:id="@+id/list_siding_mingpian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_siding_wenjian"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:color/transparent"
+                android:text="            我的名片夹"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/qq_setting_setting" />
+
+        <Button
+            android:id="@+id/list_siding_shezhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:background="@android:color/transparent"
+            android:onClick="shezhiClick"
+            android:text="      设置"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/list_siding_shezhi"
+            android:src="@drawable/qq_setting_me_nightmode_off" />
+
+        <Button
+            android:id="@+id/list_siding_yejian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/list_siding_shezhi"
+            android:background="@android:color/transparent"
+            android:text="      夜间"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        
+        <TextView 
+            android:id="@+id/list_siding_tianqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/list_siding_yejian"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="45dp"
+            android:textSize="15sp" 
+            android:textColor="@color/white"
+            android:text="赣州"/>
+        
+        <TextView 
+            android:id="@+id/list_siding_tianqitu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/list_siding_yejian"
+            android:layout_above="@id/list_siding_tianqi"
+            android:layout_marginLeft="45dp"
+            android:textSize="25sp" 
+            android:textColor="@color/white"
+            android:text="25º"/>
+    </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/list_ziliao_beijin"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/obq" />
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/qq_fanhui_ziliao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_fh"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@+id/img_fh"
+            android:onClick="fanhuiziliao"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/img_fh"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="fanhuiziliao"
+            android:scaleType="centerInside"
+            android:src="@drawable/hps" />
+
+        <Button
+            android:id="@+id/list_sendmsg_imgren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:text="更多"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <com.ht.qq.imageview.CircleImageView
+        android:id="@+id/list_ziliao_touxiang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/gco" />
+
+    <TextView
+        android:id="@+id/list_ziliao_nicheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_ziliao_touxiang"
+        android:layout_centerHorizontal="true"
+        android:text="小龙"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/list_ziliao_qianming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_ziliao_nicheng"
+        android:layout_centerHorizontal="true"
+        android:text="嗨喽，大家好我是小龙"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/list_ziliao_beijin2"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/list_ziliao_qianming"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/list_ziliao_daren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_ziliao_qianming"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_ziliao_beijin2"
+        android:src="@drawable/oaj" />
+
+    <ImageView
+        android:id="@+id/list_ziliao_zuan"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/list_ziliao_qianming"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/list_ziliao_beijin2"
+        android:src="@drawable/pfm" />
+
+    <TextView
+        android:id="@+id/list_ziliao_beijin3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/list_ziliao_beijin2"
+        android:layout_marginTop="10dp"
+        android:background="#E8E8E8" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F9F9F9" >
+
+        <TextView
+            android:id="@+id/list_ziliao_beijin4"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#F9F9F9" />
+
+        <Button
+            android:id="@+id/list_ziliao_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/list_ziliao_beijin4"
+            android:background="@drawable/btn_qqphone"
+            android:text="QQ电话"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/list_ziliao_msg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/list_ziliao_beijin4"
+            android:background="@drawable/btn_sendmsg"
+            android:text="发消息"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

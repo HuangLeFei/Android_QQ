@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/list_layoutreative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/list_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#12B8F6" />
+
+        <com.ht.qq.imageview.CircleImageView
+            android:id="@+id/list_view_image_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:onClick="slidingmenuonclick"
+            android:src="@drawable/gco" />
+
+        <TextView
+            android:id="@+id/list_text_dongtai"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="动态"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/list_dongtai_gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="dynamicgengduo"
+            android:text="更多"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_layoutreative"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/list_sosuo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_sousuo"
+            android:text="   搜索电影/音乐/商品..."
+            android:textColor="#A4A4A4"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/skin_searchbar_icon" />
+
+        <LinearLayout
+            android:id="@+id/list_dongtai_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_sosuo_btn"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <ImageView
+                android:id="@+id/list_haoyoudongtai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="dynaiconclick"
+                android:src="@drawable/igs" />
+
+            <ImageView
+                android:id="@+id/list_fujin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/eqc" />
+
+            <ImageView
+                android:id="@+id/list_xingquaihao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/iei" />
+        </LinearLayout>
+<LinearLayout
+            android:id="@+id/list_dongtai_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_dongtai_layout"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+        <TextView
+            android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+            android:text="好友动态" />
+
+        <TextView
+            android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+            android:text="附近" />
+
+        <TextView
+            android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+            android:text="兴趣部落" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/list_dongtai_beijing1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/list_dongtai_layout_1"
+            android:background="#F9F9FB"/>
+        
+        <ImageView 
+            android:id="@+id/list_dynamic_youxiimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_dongtai_beijing1"
+            android:layout_margin="10dp"
+            android:src="@drawable/prd"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_dongtai_beijing1"
+            android:layout_toRightOf="@id/list_dynamic_youxiimg"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="游戏"/>
+        
+    </RelativeLayout>
+
+
+</RelativeLayout>

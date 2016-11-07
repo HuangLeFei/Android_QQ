@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDF1"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/zhuce1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#1FBAF3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#1FBAF3"
+        android:onClick="zhucefanhui"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="填写注册信息"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/qq_hin0"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/zhuce1" />
+
+    <TextView
+        android:id="@+id/zhucetouxiang"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/qq_hin0"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    头    像"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <com.ht.qq.imageview.CircleImageView
+        android:id="@+id/list_zhuce_touxiang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/qq_hin0"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:onClick="touxiang"
+        android:src="@drawable/gco" />
+
+    <TextView
+        android:id="@+id/qq_hin1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhucetouxiang" />
+
+    <TextView
+        android:id="@+id/zhucephoto"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    中国+86"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/list_zhuce_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin1"
+        android:layout_marginLeft="130dp"
+        android:background="@color/white"
+        android:hint=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/qq_hin2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhucephoto" />
+
+    <TextView
+        android:id="@+id/zhucename"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin2"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    昵    称"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/list_zhuce_name"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin2"
+        android:layout_marginLeft="130dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/qq_hin3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhucename" />
+
+    <TextView
+        android:id="@+id/zhucepwd"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin3"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    密    码"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/list_zhuce_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin3"
+        android:layout_marginLeft="130dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:password="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/qq_hin4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhucepwd" />
+
+    <TextView
+        android:id="@+id/zhucepwd2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin4"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    确认密码"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/list_zhuce_querenpwd"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin4"
+        android:layout_marginLeft="130dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="请在输入密码"
+        android:password="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/qq_hin5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhucepwd2" />
+
+    <TextView
+        android:id="@+id/zhucesex"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/qq_hin5"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    性    别"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qq_hin5"
+        android:layout_marginLeft="130dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/nan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="男"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+
+        <RadioButton
+            android:id="@+id/nv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="女"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/qq_hin6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhucesex" />
+
+    <TextView
+        android:id="@+id/zhuceaddress"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin6"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    地    址"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/list_zhuce_address"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin6"
+        android:layout_marginLeft="130dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="输入地址"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/qq_hin7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhuceaddress" />
+
+    <TextView
+        android:id="@+id/zhuceqianming"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin7"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="    个性签名"
+        android:textColor="#1FBAF3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/list_zhuce_qianming"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/qq_hin7"
+        android:layout_marginLeft="130dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="这个人很懒,什么都没留下"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/qq_hin8"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/zhuceqianming" />
+
+    <Button
+        android:id="@+id/qq_zhuceonclick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/qq_hin8"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button_login"
+        android:src="@drawable/gwc"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/qq_hin9"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/qq_zhuceonclick" />
+
+    <ImageView
+        android:id="@+id/qq_zhucedui"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/qq_hin9"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/gqq" />
+
+    <TextView
+        android:id="@+id/qq_zhucezi2"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/qq_hin9"
+        android:layout_marginLeft="40dp"
+        android:gravity="center_vertical"
+        android:text="我已阅读并同意" />
+
+    <TextView
+        android:id="@+id/qq_zhucezi3"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/qq_hin9"
+        android:layout_marginLeft="140dp"
+        android:gravity="center_vertical"
+        android:text="使用条款和隐私政策"
+        android:textColor="#1FBAF3" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#12B8F6" />
+
+    <TextView
+        android:id="@+id/qq_fanhui_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_fh"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@+id/img_fh"
+        android:text="联系人"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/qq_fanhui"
+        android:layout_alignBottom="@+id/qq_fanhui"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/qq_fanhui_friend"
+        android:gravity="center"
+        android:text="新朋友"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/list_friend_tianjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/qq_fanhui"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="添加"
+        android:onClick="friendaddsel"
+        android:layout_alignTop="@id/qq_fanhui_friend"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_fh"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="friendfanhui"
+        android:scaleType="centerInside"
+        android:src="@drawable/hps" />
+
+    <ListView
+        android:id="@+id/list_addfriend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view1_friend" >
+    </ListView>
+
+</RelativeLayout>

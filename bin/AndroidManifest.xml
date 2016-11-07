@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ht.qq"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.ht.qq.QqValuesActivity"
+        android:allowBackup="true"
+        android:icon="@drawable/hcw"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".QqLoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".QqMainActivity"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity android:name=".QqShezhiActivity" >
+        </activity>
+        <activity android:name=".QqZhuCeActivity" >
+        </activity>
+        <activity android:name=".ChatActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.DongtTaiPublishedActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.QqMainLianxiren" >
+        </activity>
+        <activity android:name="com.ht.qq.QqMainDynamic" >
+        </activity>
+        <activity android:name="com.ht.qq.QqAddFriendActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.QqFiendSelActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.QqLoadingActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.SendShuoActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.QqLiaoTianActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.QqzhiliaoActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.QqTiShiActivity" >
+        </activity>
+        <activity android:name="com.ht.qq.QqExitActivity"></activity>
+    </application>
+
+</manifest>

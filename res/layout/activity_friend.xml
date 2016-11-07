@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/list_friend_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="好友申请"
+        android:textColor="#AEAEAE" />
+
+    <com.ht.qq.imageview.CircleImageView
+        android:id="@+id/friend_add_touxiang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/list_friend_text1"
+        android:layout_below="@id/list_friend_text1"
+        android:src="@drawable/gco" />
+
+    <TextView
+        android:id="@+id/list_friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_friend_text1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/friend_add_touxiang"
+        android:text="小龙"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/list_friend_nametongzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_friend_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/friend_add_touxiang"
+        android:text="我是小龙"
+        android:textColor="#3C3C3C" />
+
+    <TextView
+        android:id="@+id/list_friend_namelaiyuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_friend_nametongzhi"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/friend_add_touxiang"
+        android:text="来源:"
+        android:textColor="#C3C3C3" />
+
+    <TextView
+        android:id="@+id/list_friend_laiyuanaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_friend_nametongzhi"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/list_friend_namelaiyuan"
+        android:text="QQ查找"
+        android:textColor="#C3C3C3" />
+
+    <Button
+        android:id="@+id/list_friend_dontagree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_friend_nametongzhi"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:textSize="18sp"
+        android:text="不同意" />
+
+    <Button
+        android:id="@+id/list_friend_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/list_friend_nametongzhi"
+        android:layout_toLeftOf="@id/list_friend_dontagree"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:text="同意" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/list_friend_namelaiyuan"
+        android:layout_marginTop="10dp"
+        android:background="#EDEDED" />
+
+</RelativeLayout>

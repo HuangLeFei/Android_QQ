@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@drawable/button_kuang" />
+
+        <TextView
+            android:id="@+id/list_view_tuichuzhanghao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:text="退出当前账号"
+            android:textSize="20sp" />
+        
+        <TextView 
+            android:id="@+id/list_view_tuichuzhanghao2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="退出QQ可能会使你连续登录820天的记录归零,QQ达人图标变灰,确定退出?"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="#757575"
+            android:textSize="17sp"
+            android:layout_below="@id/list_view_tuichuzhanghao1"/>
+
+        <View 
+            android:id="@+id/list_view_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#eaeaea"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/list_view_tuichuzhanghao2"/>
+        <View 
+            android:id="@+id/list_view_line2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#d7d7d7"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/list_view_line1"/>
+        
+        <Button 
+            android:id="@+id/list_exit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/list_view_line2"
+           	android:layout_below="@id/list_view_line1"
+           	android:background="@android:color/transparent"
+           	android:textColor="#12B8F6"
+           	android:textSize="22sp"
+           	android:layout_centerHorizontal="true"
+            android:text="取消"/>
+        
+        <Button 
+            android:id="@+id/list_must_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/list_view_line2"
+           	android:layout_below="@id/list_view_line1"
+           	android:background="@android:color/transparent"
+           	android:textColor="#12B8F6"
+           	android:textSize="22sp"
+           	android:layout_centerHorizontal="true"
+            android:text="确认退出"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
