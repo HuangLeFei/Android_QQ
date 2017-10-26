@@ -33,7 +33,7 @@ public class AddFriendAdapter extends BaseAdapter {
 	private Button agreebtnadapter;
 	private Button noagreebtnadapter;
 	private Context contexts;
-	/**
+	/**修改了，上传github
 	 * 自定义接口，用于回调按钮点击事件到Activity
 	 */
 	public interface Callback {
